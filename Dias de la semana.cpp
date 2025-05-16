@@ -5,39 +5,40 @@
 #include <cstdlib>
 #include <stdio.h>
 
-// vamos a crear un programa que imprima los dias de la semana acorde al numero que se le pase del 1 al 7 
+// Vamos a crear un programa que imprima los días de la semana acorde al número del 1 al 7 
 
 using namespace std;
+
 int main() {
     int dia;
-    cout << "Ingrese un numero del 1 al 7: ";
-    cin >> dia;
+    printf("Ingrese un número del 1 al 7: ");
+    scanf("%d", &dia);
     
     switch (dia) {
         case 1:
-            cout << "Lunes" << endl;
+            printf("Lunes\n");
             break;
         case 2:
-            cout << "Martes" << endl;
+            printf("Martes\n");
             break;
         case 3:
-            cout << "Miercoles" << endl;
+            printf("Miércoles\n");
             break;
         case 4:
-            cout << "Jueves" << endl;
+            printf("Jueves\n");
             break;
         case 5:
-            cout << "Viernes" << endl;
+            printf("Viernes\n");
             break;
         case 6:
-            cout << "Sabado" << endl;
+            printf("Sábado\n");
             break;
         case 7:
-            cout << "Domingo" << endl;
+            printf("Domingo\n");
             break;
         default:
-            cout << "Numero invalido. Debe ser del 1 al 7." << endl;
+            printf("Número inválido. Debe ser del 1 al 7.\n");
     }
-    
+
     return 0;
 }
